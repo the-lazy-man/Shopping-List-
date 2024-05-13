@@ -35,30 +35,11 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     ShoppingListMainFuntion()
-//                    var shopItems by remember{mutableStateOf(listOf<ShoppingItem>())}
-//                  Column(
-//                      modifier = Modifier.fillMaxSize(),
-//                      verticalArrangement = Arrangement.Center
-//                  ){
-//                      Button(
-//                          onClick = {},
-//                          modifier = Modifier.align(Alignment.CenterHorizontally)) {
-//                          Text(text = "Add Item")
-//                      }
-//                      LazyColumn(modifier = Modifier.fillMaxSize().padding(15.dp)){
-//                            items(shopItems){
-//
-//                            }
-  //                    }
-  //                }
+
+
                 }
             }
         }
     }
 }
-//// properties of items in the shopping app
-//data class ShoppingItem(val Id : Int,
-//                        val name : String,
-//                        val quantity : Int,
-//                        val isEditing : Boolean = false
-//)
+

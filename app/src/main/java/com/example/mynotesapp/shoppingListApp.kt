@@ -154,12 +154,12 @@ fun ShoppingListView(
             .fillMaxWidth()
             .padding(8.dp)
             .border(
-                border = BorderStroke(4.dp, Color(11213456)),
-                shape = RoundedCornerShape(40)
+                border = BorderStroke(2.dp, Color.Blue),
+                shape = RoundedCornerShape(20)
             ),
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Text(text = item.name, modifier = Modifier.padding(28.dp))
+        Text(text = item.name, modifier = Modifier.padding(8.dp))
         Text(text = item.quantity.toString(), modifier = Modifier.padding(8.dp))
         Row(modifier = Modifier.padding(8.dp)) {
             IconButton(onClick = onEditClick) {
@@ -179,8 +179,13 @@ fun ShoppingItemEditView(Item: ShoppingItem, onEditCompleted : (String,Int) -> U
     Row (modifier = Modifier
         .fillMaxWidth()
         .background(Color.White)
-        .padding(8.dp),
-        horizontalArrangement = Arrangement.SpaceEvenly
+        .padding(8.dp)
+        .border(
+            border = BorderStroke(2.dp, Color.Black),
+            shape = RoundedCornerShape(20)
+        ),
+        horizontalArrangement = Arrangement.SpaceEvenly,
+
     ){
             Column {
                 BasicTextField(value = editName, onValueChange = {editName = it},
